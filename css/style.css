@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #eb1ccc;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: #181818;
+}
+
+/* EVENT FORM */
+#event-description {
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../img/hrz-5.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#disclaimer h2, #disclaimer .event-date {
+    color: var(--primary);
+}
+
+#disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event {
+    max-width: 350px;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#disclaimer .event-date {
+    font-weight: bold;
+}
+
+#subscription-form {
+    max-width: 22%;
+    padding: 2em;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--text-tertiary);
+    margin-bottom: .3em;
+}
+
+.form-group input, .form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.form-group select option {
+    font-weight: bold;
+    color: var(--text-secondary);
+    background-color: #99999956;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    background-color: var(--primary);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    opacity: .7;
+    transition: .3s;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* EVENT BENEFITS */
+#key-benefits h2 {
+    padding: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--text-secondary);
+}
+
+.benefits {
+    width: 80%;
+    padding: 4em;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.benefit {
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+
+.benefit #benefit-1 {
+    background-image: url('../img/sqr-1.jpg');
+}
+
+.benefit #benefit-2 {
+    background-image: url('../img/sqr-2.jpg');
+}
+
+.benefit #benefit-3 {
+    background-image: url('../img/sqr-3.jpg');
+}
+
+/* EVENT LOCATION */
+#location {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../img/hrz-1.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3em;
+}
+
+#address, #about-location {
+    max-width: 30%;
+}
+
+#address {
+    display: flex;
+}
+
+#address i {
+    font-size: 4em;
+    color: var(--primary);
+    margin-right: .5em;
+}
+
+#address-details {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#about-location h3 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 1em;
+}
+
+#about-location p {
+    line-height: 1.5em;
+}
+
+/* EVENT DETAILS */
+#details {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detail img {
+    width: 50%;
+    border-radius: 10px; 
+}
+
+.detail h3 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+#detail-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.detail-description {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.detail-description ul {
+    list-style-position: inside;
+}
+
+.detail-description ul li {
+    margin-bottom: .4em;
+}
+
+.detail-description ul li:last-child {
+    font-weight: bold;
+}
+
+/* CALL TO ACTION */
+#cta {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color);
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../img/hrz-6.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#cta h3 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1.2em;
+}
+
+#cta .btn {
+    width: 30%;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+#footer {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--secondary);
+    text-align: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2) {
+    font-size: 1em;
+    margin-bottom: 1.2em;
+}
+
+#footer span {
+    font-weight: bold;
+}
